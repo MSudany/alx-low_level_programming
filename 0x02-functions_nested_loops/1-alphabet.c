@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-
+/**
+ * main - Entry point
+ *
+ * Return: Always void (Success)
+ */
 void print_alphabet(void)
 {
 	int i;
