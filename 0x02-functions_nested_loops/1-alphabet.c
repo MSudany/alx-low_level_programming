@@ -3,9 +3,9 @@
 #include <string.h>
 #include "main.h"
 /**
- * main - Entry point
+ * main - print lowercase alphabet
  *
- * Return: Always void (Success)
+ * Return: Always void.
  */
 void print_alphabet(void)
 {
