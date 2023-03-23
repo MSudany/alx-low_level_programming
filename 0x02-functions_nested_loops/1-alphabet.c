@@ -3,9 +3,10 @@
 #include <string.h>
 #include "main.h"
 /**
- * main - print lowercase alphabet
- *
- * Return: Always void.
+ * print_alphabet(void) - print lowercase alphabet
+ * @args: no args
+ * 
+ * Description: print lowercase alphabet [a-z].
  */
 void print_alphabet(void)
 {
