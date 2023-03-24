@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - prints most numbers from 0 to 9
- * 
+ *
  * Description: prints most numbers from 0 to 9
  * Return: void.
  */
