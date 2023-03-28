@@ -4,7 +4,7 @@
  * puts2 - prints every other character of a string
  * @str: string
  *
- * Description: prints every other character of a string, starting with the 
+ * Description: prints every other character of a string, starting with the
  * first character, followed by a new line.
  * Return: void
  */
