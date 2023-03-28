@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * puts2 - prints every other character of a string
- * @str: string
+ * _strcpy - copies a string to a buffer
+ * @dest: destination that recieves the copy
+ * @src: string to be copied
  *
- * Description: prints every other character of a string, starting with the
- * first character, followed by a new line.
- * Return: void
+ * Description: copies the contents of a string to a specific destination
+ * Return: pointer to destination
  */
-void puts2(char *str)
+char *_strcpy(char *dest, char *src)
 {
-        int i = 0;
+	int i = 0, length = 0;
 
-        while (*(str + i))
-        {
-                _putchar(*(str + i));
-                i = i + 2;
-        }
-        _putchar('\n');
+	while (src[i++])
+		length++;
+
+	for (i = 0; i <= length; i++)
+		dest[i] = src[i];
+
+	return (dest);
 }
