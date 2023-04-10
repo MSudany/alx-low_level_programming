@@ -2,6 +2,8 @@
 #include "stdio.h"
 /**
  * main - Entry point
+ * @argc: args counter
+ * @argv: args container
  *
  * Return: 0
  */
