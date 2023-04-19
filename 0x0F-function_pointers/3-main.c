@@ -18,10 +18,7 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-/*
-	a = a < 0 ? -1 * atoi(a) : atoi(a);
-	b = b < 0 ? -1 * atoi(b) : atoi(b);
-*/
+
 	printf("%d\n", get_op_func(argv[2])(a, b));
 
 	return (0);
