@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	if (!o)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	printf("%d\n", o(a, b));
