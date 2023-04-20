@@ -8,12 +8,6 @@ void pint(va_list list);
 void pfloat(va_list list);
 void pstring(va_list list);
 
-typedef struct
-{
-	char * specifier;
-	void (*f)(va_list);
-} func;
-
 /**
  * print_all - ...
  * @format: ...
@@ -60,6 +54,7 @@ void print_all(const char * const format, ...)
 void pchar(va_list list)
 {
 	char c = va_arg(list, int);
+
 	printf(", %c", c);
 }
 
@@ -73,6 +68,7 @@ void pchar(va_list list)
 void pint(va_list list)
 {
 	int i = va_arg(list, int);
+
 	printf(", %d", i);
 }
 
@@ -86,6 +82,7 @@ void pint(va_list list)
 void pfloat(va_list list)
 {
 	double f = va_arg(list, double);
+
 	printf(", %f", f);
 }
 
@@ -98,7 +95,7 @@ void pfloat(va_list list)
  */
 void pstring(va_list list)
 {
-	char * s = va_arg(list, char *);
+	char *s = va_arg(list, char *);
 
 	if (s == NULL)
 	{

@@ -1,5 +1,18 @@
 #ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
+#include <stdarg.h>
+/**
+ * func - ...
+ * @specifier: ...
+ * @f: ...
+ *
+ * Description: ...
+ */
+typedef struct
+{
+        char *specifier;
+        void (*f)(va_list);
+} func;
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
