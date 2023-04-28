@@ -23,10 +23,10 @@ list_t *add_node(list_t **head, const char *str)
 		if (list == NULL)
 			return (NULL);
 
-		for (i = 0; dstr[i] != '\0'; i++)
+		for (i = 0; str[i] != '\0'; i++)
 			;
 
-		list->str = dstr;
+		list->str = strdup(str);
 		list->len = i;
 		list->next = *head;
 
