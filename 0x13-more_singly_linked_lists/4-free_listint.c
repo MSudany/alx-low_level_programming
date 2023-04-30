@@ -11,24 +11,15 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *curr, *next;
-
-	curr = malloc(sizeof(listint_t));
-	if (curr == NULL)
-		return;
-
-	next = malloc(sizeof(listint_t));
-	if (next == NULL)
-		return;
+	listint_t *curr, *temp;
 
 	curr = head;
-	next = head;
-	while (curr != NULL)
+	while (curr)
 	{
-		next = curr->next;
-		free(curr);
-		curr = next;
+		temp = curr;
+		curr = curr->next;
+		free(temp);
 	}
 
+	free(curr);
 }
-
