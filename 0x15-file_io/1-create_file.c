@@ -14,7 +14,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int f;
+	int f, i;
 	char *s = malloc(sizeof(char *) * strlen(text_content));
 
 	if (filename == NULL)
@@ -35,7 +35,8 @@ int create_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	write(f, s, strlen(text_content));
+	i = read(f, s, strlen(text_content));
+	write(f, s, i);
 
 	free(s);
 	close(f);
